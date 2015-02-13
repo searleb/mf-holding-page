@@ -1,0 +1,244 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+// Media Queries
+// Mobile First Method
+/* Custom, iPhone Retina */ 
+$media-iphone: "only screen and (min-width : 320px)";
+
+/* Extra Small Devices, Phones */ 
+$media-xs: "only screen and (min-width : 480px)";
+
+/* Small Devices, Tablets */
+$media-sm: "only screen and (min-width : 768px)";
+
+/* Medium Devices, Desktops */
+$media-md: "only screen and (min-width : 992px)";
+
+/* Large Devices, Wide Screens */
+$media-lg: "only screen and (min-width : 1200px)";
+
+// Colors
+$color-mf-green: #B1C841;
+$color-mf-navy: #122434;
+$color-body: #333333;
+$color-background: #F4F3EE;
+
+// Typography
+$font-title: "Maison Neue Bold", Calibri, Arial, Roboto, sans-serif;
+$font-title-weight: bold;
+$font-title-style: normal; 
+
+$font-body: "Maison Neue Medium", Calibri, Arial, Roboto, sans-serif;
+$font-body-weight: 500;
+$font-body-style: normal;
+
+$font-details: "Maison Neue Mono", Calibri, Arial, Roboto, sans-serif;
+$font-details-weight: 300;
+$font-details-style: normal;
+
+body, html{
+	background-color: $color-background;
+	color: $color-body;
+}
+h1{
+	font-family: $font-title;
+	font-weight: $font-title-weight;
+	font-style: $font-title-style;
+	font-size: 30px;
+	letter-spacing: 3px;
+	margin: 0px;
+
+		@media #{$media-sm} {
+			font-size: 40px;
+		}
+		@media #{$media-md} {
+			font-size: 55px;
+			line-height: 52px;
+		}
+
+}
+h2{
+	font-family: $font-body;
+	font-weight: $font-body-weight;
+	font-style: $font-body-style;
+	margin: 0px;
+	font-size: 18px;
+	line-height: 23px;
+
+		@media #{$media-md} {
+			letter-spacing: 1.14px;
+			font-size: 20px;
+		}
+
+}
+p{
+	font-family: $font-body;
+	font-weight: $font-body-weight;
+	font-style: $font-body-style;
+	font-size:16px;
+	line-height: 23px;
+}
+// .details a{
+// 	font-family: $font-details;
+// 	font-weight: $font-details-weight;
+// 	font-style: $font-details-style;
+// 	font-size: 12px;
+// 	letter-spacing: 0.98px;
+// 	line-height: 17px;
+// }
+.details, .details a{
+	font-family: $font-details;
+	font-weight: $font-details-weight;
+	font-style: $font-details-style;
+	font-size: 12px;
+	letter-spacing: 0.98px;
+	line-height: 17px;
+}
+.section-title{
+	margin: 20px 0px 30px 0px;
+}
+.mf-navy{
+	color: $color-mf-navy;
+}
+.mf-green{
+	color: $color-mf-green
+}
+nav {
+	margin-top: 20px;
+	background-color: $color-background;
+	position: fixed;
+	top: 0;
+
+	li>a{
+		font-family: $font-details;
+		font-weight: $font-details-weight;
+		font-style: $font-details-style;
+		font-size: 14px;
+		color: $color-mf-green;
+		letter-spacing: 1.14px;
+		text-align: center;
+		@media #{$media-md} {
+			padding-left: 0px !important;
+			padding-right: 30px !important;
+		}
+		&:hover{
+			background-color: transparent !important;
+			color: $color-mf-navy;
+		}
+	}
+	.navbar-toggle{
+		width: 100%;
+		text-align: center;
+		margin: 8px 0px;
+		color: $color-body;
+	}
+
+	.button{
+		font-family: $font-details;
+		font-weight: $font-details-weight;
+		font-style: $font-details-style;
+		color: $color-mf-green;
+		text-transform: uppercase;
+		border: 2px solid $color-mf-green;
+		background: transparent;
+		font-size: 14px;
+		letter-spacing: 1.14px;
+		line-height: 14px;
+		padding: 9px 16px;
+	}
+	#navbar{
+		background-color: #fff;
+		
+		@media #{$media-sm} {
+				background-color: $color-background;
+		}
+	}
+}
+
+button{
+	font-family: $font-details;
+	font-weight: $font-details-weight;
+	font-style: $font-details-style;
+	color: $color-mf-green;
+	text-transform: uppercase;
+	border: 2px solid $color-mf-green;
+	background: transparent;
+	font-size: 14px;
+	letter-spacing: 1.14px;
+	line-height: 14px;
+	padding: 9px 16px;
+}
+
+ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px 0px 0px 15px;
+}
+a{
+	color: $color-mf-green;
+	text-decoration: underline;
+	font-family: $font-body;
+	font-weight: $font-body-weight;
+	font-style: $font-body-style;
+	font-size:16px;
+	line-height: 23px;
+	&:hover{
+		color: $color-mf-navy;
+	}
+}
+
+#landing-page{
+	padding-top: 100px;
+
+	#title-text{
+		margin-top: 90px;
+	}
+	@media #{$media-md} {
+		#title-text{
+			margin-top: 110px;
+		}
+		.title-subheading{
+			margin-top: 60px;
+			font-size: 20px;
+		}
+	}
+}
+
+.chevron{
+	width: 34px;
+	margin: 35px auto 0px auto;
+
+	@media #{$media-md} {
+		margin: 200px auto 0px auto;
+	}
+}
+
+section{
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

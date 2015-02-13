@@ -1,0 +1,158 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+body, html {
+  background-color: #F4F3EE;
+  color: #333333; }
+
+h1 {
+  font-family: "Maison Neue Bold", Calibri, Arial, Roboto, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin: 0px; }
+  @media only screen and (min-width: 768px) {
+    h1 {
+      font-size: 40px; } }
+  @media only screen and (min-width: 992px) {
+    h1 {
+      font-size: 55px;
+      line-height: 52px; } }
+
+h2 {
+  font-family: "Maison Neue Medium", Calibri, Arial, Roboto, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0px;
+  font-size: 18px;
+  line-height: 23px; }
+  @media only screen and (min-width: 992px) {
+    h2 {
+      letter-spacing: 1.14px;
+      font-size: 20px; } }
+
+p {
+  font-family: "Maison Neue Medium", Calibri, Arial, Roboto, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 23px; }
+
+.details, .details a {
+  font-family: "Maison Neue Mono", Calibri, Arial, Roboto, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: 0.98px;
+  line-height: 17px; }
+
+.section-title {
+  margin: 20px 0px 30px 0px; }
+
+.mf-navy {
+  color: #122434; }
+
+.mf-green {
+  color: #B1C841; }
+
+nav {
+  margin-top: 20px;
+  background-color: #F4F3EE;
+  position: fixed;
+  top: 0; }
+  nav li > a {
+    font-family: "Maison Neue Mono", Calibri, Arial, Roboto, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: #B1C841;
+    letter-spacing: 1.14px;
+    text-align: center; }
+    @media only screen and (min-width: 992px) {
+      nav li > a {
+        padding-left: 0px !important;
+        padding-right: 30px !important; } }
+    nav li > a:hover {
+      background-color: transparent !important;
+      color: #122434; }
+  nav .navbar-toggle {
+    width: 100%;
+    text-align: center;
+    margin: 8px 0px;
+    color: #333333; }
+  nav .button {
+    font-family: "Maison Neue Mono", Calibri, Arial, Roboto, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #B1C841;
+    text-transform: uppercase;
+    border: 2px solid #B1C841;
+    background: transparent;
+    font-size: 14px;
+    letter-spacing: 1.14px;
+    line-height: 14px;
+    padding: 9px 16px; }
+  nav #navbar {
+    background-color: #fff; }
+    @media only screen and (min-width: 768px) {
+      nav #navbar {
+        background-color: #F4F3EE; } }
+
+button {
+  font-family: "Maison Neue Mono", Calibri, Arial, Roboto, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #B1C841;
+  text-transform: uppercase;
+  border: 2px solid #B1C841;
+  background: transparent;
+  font-size: 14px;
+  letter-spacing: 1.14px;
+  line-height: 14px;
+  padding: 9px 16px; }
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px 0px 0px 15px; }
+
+a {
+  color: #B1C841;
+  text-decoration: underline;
+  font-family: "Maison Neue Medium", Calibri, Arial, Roboto, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 23px; }
+  a:hover {
+    color: #122434; }
+
+#landing-page {
+  padding-top: 100px; }
+  #landing-page #title-text {
+    margin-top: 90px; }
+  @media only screen and (min-width: 992px) {
+    #landing-page #title-text {
+      margin-top: 110px; }
+    #landing-page .title-subheading {
+      margin-top: 60px;
+      font-size: 20px; } }
+
+.chevron {
+  width: 34px;
+  margin: 35px auto 0px auto; }
+  @media only screen and (min-width: 992px) {
+    .chevron {
+      margin: 200px auto 0px auto; } }
+
+section {
+  margin-bottom: 50px;
+  margin-top: 50px; }
