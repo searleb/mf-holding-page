@@ -81,14 +81,16 @@ p{
 	font-size:16px;
 	line-height: 23px;
 }
-// .details a{
-// 	font-family: $font-details;
-// 	font-weight: $font-details-weight;
-// 	font-style: $font-details-style;
-// 	font-size: 12px;
-// 	letter-spacing: 0.98px;
-// 	line-height: 17px;
-// }
+.blog-title{
+	font-family: $font-title;
+	font-weight: $font-title-weight;
+	font-style: $font-title-style;
+	color: $color-mf-navy;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 1.26px;
+	line-height: 16px;
+}
 .details, .details a{
 	font-family: $font-details;
 	font-weight: $font-details-weight;
@@ -217,8 +219,12 @@ a{
 }
 
 section{
-	margin-bottom: 50px;
-	margin-top: 50px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+#work{
+	background-color: #FFF;
 }
 
 

@@ -46,6 +46,16 @@ p {
   font-size: 16px;
   line-height: 23px; }
 
+.blog-title {
+  font-family: "Maison Neue Bold", Calibri, Arial, Roboto, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #122434;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1.26px;
+  line-height: 16px; }
+
 .details, .details a {
   font-family: "Maison Neue Mono", Calibri, Arial, Roboto, sans-serif;
   font-weight: 300;
@@ -154,5 +164,8 @@ a {
       margin: 200px auto 0px auto; } }
 
 section {
-  margin-bottom: 50px;
-  margin-top: 50px; }
+  padding-bottom: 50px;
+  padding-top: 50px; }
+
+#work {
+  background-color: #FFF; }
