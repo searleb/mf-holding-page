@@ -16,8 +16,8 @@ $(document).ready(function(){
 	}
 
 	$(window).resize(function() {
-		// setLandingPageSize();
+		setLandingPageSize();
 	}); 
 
-	// setLandingPageSize();
+	setLandingPageSize();
 });

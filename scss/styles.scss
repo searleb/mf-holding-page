@@ -72,7 +72,9 @@ h2{
 			letter-spacing: 1.14px;
 			font-size: 20px;
 		}
-
+}
+h3{
+	margin-top: 0px;
 }
 p{
 	font-family: $font-body;
@@ -87,15 +89,34 @@ p{
 	font-style: $font-title-style;
 	color: $color-mf-navy;
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 14px;
 	letter-spacing: 1.26px;
 	line-height: 16px;
+}
+.details-container{
+	margin-top: 50px;
+	padding-left: 15px;
+}
+.details-small, .details-small a{
+	font-family: $font-details;
+	font-weight: $font-details-weight;
+	font-style: $font-details-style;
+	color: $color-mf-navy;
+	font-size: 10px;
+	letter-spacing: 0.98px;
+	line-height: 17px;
+}
+.details-small a, .details a{
+	&:hover{
+		color: $color-mf-green;
+	}
 }
 .details, .details a{
 	font-family: $font-details;
 	font-weight: $font-details-weight;
 	font-style: $font-details-style;
-	font-size: 12px;
+	color: $color-mf-navy;
+	font-size: 14px;
 	letter-spacing: 0.98px;
 	line-height: 17px;
 }
@@ -109,7 +130,7 @@ p{
 	color: $color-mf-green
 }
 nav {
-	margin-top: 20px;
+	// margin-top: 20px;
 	background-color: $color-background;
 	position: fixed;
 	top: 0;
@@ -192,6 +213,14 @@ a{
 	}
 }
 
+
+section{
+	padding: 50px 0px;
+}
+
+
+// LANDING PAGE
+
 #landing-page{
 	padding-top: 100px;
 
@@ -207,28 +236,81 @@ a{
 			font-size: 20px;
 		}
 	}
-}
+	.chevron{
+		width: 34px;
+		margin: 35px auto 0px auto;
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translate(-50%, 0);
 
-.chevron{
-	width: 34px;
-	margin: 35px auto 0px auto;
-
-	@media #{$media-md} {
-		margin: 200px auto 0px auto;
+		@media #{$media-md} {
+			margin: 200px auto 0px auto;
+		}
 	}
 }
 
-section{
-	padding-bottom: 50px;
-	padding-top: 50px;
+
+
+
+// ABOUT SECTION
+#about{
+	article{
+		padding-right: 40px;
+		margin-bottom: 30px;
+	}
+}
+
+
+#articles-list{
+	li{
+		margin-bottom: 20px;
+		a{
+			font-size: 14px;
+		}
+	}
+}
+
+
+
+//  WORK SECTION
+
+.work-article{
+	height: 250px;
+	padding-top: 40px;
+	img{
+		margin-top: 10px;
+		margin-bottom: 25px;
+	}
 }
 
 #work{
 	background-color: #FFF;
 }
 
+.article-divider{
+	border-top: 1px solid grey;
+}
 
+// FOOTER
 
+footer{
+	.contact{
+		padding: 25px;
+	}
+
+	#contact-syd{
+		background-color: $color-mf-navy;
+		color: #fff !important;
+	}
+
+	#contact-ldn{
+		background-color: $color-mf-green;
+	}	
+}
+.container-fluid{
+	padding: 0px;
+}
 
 
 

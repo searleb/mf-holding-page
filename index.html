@@ -35,8 +35,9 @@
 	            <li><a href="#about">ABOUT</a></li>
 	            <li><a href="#contact">BLOG</a></li>
 	            <li><a href="#jobs">JOBS</a></li>
+	            <li class="visible-xs-block"><a href="#contact">CONTACT</a></li>
 	          </ul>
-	          <ul class="nav navbar-nav navbar-right">
+	          <ul class="nav navbar-nav navbar-right hidden-xs">
 				<li><a class="button" href="">CONTACT</a></li>
 	          </ul>
 	        </div><!--/.nav-collapse -->
@@ -96,20 +97,24 @@
 							<h2>Content</h2>
 							<p class="mf-green">Beautiful, engaging content</p>
 						</article>
-						<article class="col-sm-4">
-							<h2>UI / UX</h2>
-							<p class="mf-green">Intuitive, beautful interfaces, that solve problems.</p>
-						</article>
-						<article class="col-sm-4">
-							<h2>Growth</h2>
-							<p class="mf-green">Creating demand through smart communication.</p>
-						</article>
-						<article class="col-sm-4">
-							<h2>Community</h2>
-							<p class="mf-green">Meaningful and measurable community and loyalty programs.</p>
-						</article>
 					</div>
 				</div>
+					<div class="row">
+						<div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-2">
+							<article class="col-sm-4">
+								<h2>UI / UX</h2>
+								<p class="mf-green">Intuitive, beautful interfaces, that solve problems.</p>
+							</article>
+							<article class="col-sm-4">
+								<h2>Growth</h2>
+								<p class="mf-green">Creating demand through smart communication.</p>
+							</article>
+							<article class="col-sm-4">
+								<h2>Community</h2>
+								<p class="mf-green">Meaningful and measurable community and loyalty programs.</p>
+							</article>
+						</div>
+					</div>
 			</section>
 			
 			<section>
@@ -120,13 +125,15 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-2">
-						<ul>
+						<ul id="articles-list">
 							<li><a href="">Product growth tools we use</a></li>
 							<li><a href="">Working with your agency as a team</a></li>
 							<li><a href="">Seventeen things you should be doing</a></li>
 						</ul>
-						<p class="details">Our Writing <a href="">Medium</a></p>
-						<p class="details">Our Studio <a href="">Facebook</a>&amp;<a href="">Instagram</a></p>
+						<div class="details-container">
+							<p class="details-small">Our Writing <a href="">Medium</a></p>
+							<p class="details-small">Our Studio <a href="">Facebook</a> &amp; <a href="">Instagram</a></p>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -137,19 +144,90 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-11 col-sm-10 col-sm-offset-2 section-title">
-						<h2>Articles about our team and process:</h2>
+						<h2>Recently delivered work -</h2>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-2">
-						<article>
-							<div class="col-sm-4">FITNESS FIRST</div>
+					<div class="col-xs-12 col-sm-10 col-sm-offset-2">
+						<article class="work-article">
+							<div class="col-sm-4"><img src="img/fitness-first.png" alt=""></div>
 							<div class="col-sm-8">
 								<h3 class="blog-title">Increasing customer retention through utility</h3>
-								
+								<p class="details"><span class="mf-green">Delivered: </span>Global fitness <a href="">IOS</a> &amp; <a href="">Andriod</a> apps</p>
+								<p></p>
 							</div>
 						</article>
+						<div class="col-xs-12 article-divider"></div>
+
+						<article class="work-article">
+							<div class="col-sm-4"><img src="img/fitness-first.png" alt=""></div>
+							<div class="col-sm-8">
+								<h3 class="blog-title">Increasing customer retention through utility</h3>
+								<p class="details"><span class="mf-green">Delivered: </span>Global fitness <a href="">IOS</a> &amp; <a href="">Andriod</a> apps</p>
+								<p></p>
+							</div>
+						</article>
+						<div class="col-xs-12 article-divider"></div>
+
+						<article class="work-article">
+							<div class="col-sm-4"><img src="img/fitness-first.png" alt=""></div>
+							<div class="col-sm-8">
+								<h3 class="blog-title">Increasing customer retention through utility</h3>
+								<p class="details"><span class="mf-green">Delivered: </span>Global fitness <a href="">IOS</a> &amp; <a href="">Andriod</a> apps</p>
+								<p></p>
+							</div>
+						</article>
+						<div class="col-xs-12 article-divider"></div>
 					</div>
+				</div>
+				<div class="details-container">
+					<p class="details-small">Find more of our work on <a href="">Medium</a></p>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- footer -->
+
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<section>
+							<h2>Fifty staff across two studios working closely together on international and local projects.</h2>
+						</section>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<section>
+						<footer>
+							<div id="contact-syd" class="col-xs-12 col-sm-6 contact">
+								<h2>Sydney -</h2>
+								<address class="details">
+									199 Cleveland St, Surry Hills, Aus
+								</address>
+								<p class="details">contact:</p>
+								<p class="details"><a href="mailto:sydney@mentallyfriendly.com">sydney@mentallyfriendly.com</a></p>
+								<p class="details"><a href="tel:+61 (0)2 9360 8667">+61 (0)2 9360 8667</a></p>
+
+								<p class="details"><a href="">Jobs</a></p>
+							</div>
+
+							<div id="contact-ldn" class="col-xs-12 col-sm-6 contact">
+								<h2>London -</h2>
+								<address>
+									201-203 City Rd, London EC1V 1JN, UK
+								</address>
+								<p class="details">contact:</p>
+								<p class="details"><a href="mailto:london@mentallyfriendly.com">london@mentallyfriendly.com</a></p>
+								<p class="details"><a href="tel:+61 (0)2 9360 8667">+61 (0)2 9360 8667</a></p>
+
+								<p class="details"><a href="">Jobs</a></p>
+							</div>
+						</footer>
+					</section>
 				</div>
 			</div>
 		</section>

@@ -39,6 +39,9 @@ h2 {
       letter-spacing: 1.14px;
       font-size: 20px; } }
 
+h3 {
+  margin-top: 0px; }
+
 p {
   font-family: "Maison Neue Medium", Calibri, Arial, Roboto, sans-serif;
   font-weight: 500;
@@ -52,15 +55,32 @@ p {
   font-style: normal;
   color: #122434;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 1.26px;
   line-height: 16px; }
+
+.details-container {
+  margin-top: 50px;
+  padding-left: 15px; }
+
+.details-small, .details-small a {
+  font-family: "Maison Neue Mono", Calibri, Arial, Roboto, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #122434;
+  font-size: 10px;
+  letter-spacing: 0.98px;
+  line-height: 17px; }
+
+.details-small a:hover, .details a:hover {
+  color: #B1C841; }
 
 .details, .details a {
   font-family: "Maison Neue Mono", Calibri, Arial, Roboto, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 12px;
+  color: #122434;
+  font-size: 14px;
   letter-spacing: 0.98px;
   line-height: 17px; }
 
@@ -74,7 +94,6 @@ p {
   color: #B1C841; }
 
 nav {
-  margin-top: 20px;
   background-color: #F4F3EE;
   position: fixed;
   top: 0; }
@@ -145,6 +164,9 @@ a {
   a:hover {
     color: #122434; }
 
+section {
+  padding: 50px 0px; }
+
 #landing-page {
   padding-top: 100px; }
   #landing-page #title-text {
@@ -155,17 +177,46 @@ a {
     #landing-page .title-subheading {
       margin-top: 60px;
       font-size: 20px; } }
+  #landing-page .chevron {
+    width: 34px;
+    margin: 35px auto 0px auto;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0); }
+    @media only screen and (min-width: 992px) {
+      #landing-page .chevron {
+        margin: 200px auto 0px auto; } }
 
-.chevron {
-  width: 34px;
-  margin: 35px auto 0px auto; }
-  @media only screen and (min-width: 992px) {
-    .chevron {
-      margin: 200px auto 0px auto; } }
+#about article {
+  padding-right: 40px;
+  margin-bottom: 30px; }
 
-section {
-  padding-bottom: 50px;
-  padding-top: 50px; }
+#articles-list li {
+  margin-bottom: 20px; }
+  #articles-list li a {
+    font-size: 14px; }
+
+.work-article {
+  height: 250px;
+  padding-top: 40px; }
+  .work-article img {
+    margin-top: 10px;
+    margin-bottom: 25px; }
 
 #work {
   background-color: #FFF; }
+
+.article-divider {
+  border-top: 1px solid grey; }
+
+footer .contact {
+  padding: 25px; }
+footer #contact-syd {
+  background-color: #122434;
+  color: #fff !important; }
+footer #contact-ldn {
+  background-color: #B1C841; }
+
+.container-fluid {
+  padding: 0px; }
