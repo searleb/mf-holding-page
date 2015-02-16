@@ -1,18 +1,13 @@
 $(document).ready(function(){
-
-	function setLandingPageSize() {
 		var width = $(window).width();
 		var height = $(window).height();
 
+// Fit landing page to screen
+	function setLandingPageSize() {
+
 		$('#landing-page').css({
-			// 'min-width': width,
 			'min-height': height
 		});
-
-		$('.chevron').css({
-			
-		})
-
 	}
 
 	$(window).resize(function() {
@@ -20,4 +15,28 @@ $(document).ready(function(){
 	}); 
 
 	setLandingPageSize();
+
+// Smooth Scrolling
+	$(".scroll").click(function(event){
+	    event.preventDefault();
+	    //calculate destination place
+	    var dest=0;
+	    if($(this.hash).offset().top > $(document).height()-$(window).height()){
+	        dest=$(document).height()-$(window).height();
+	    }else{
+	        dest=$(this.hash).offset().top;
+	    }
+	    //go to destination
+	    if (width < 768) {
+	    	$('html,body').animate({scrollTop:dest - 35}, 1000,'swing');
+	    } else{
+	    	$('html,body').animate({scrollTop:dest - 160}, 1000,'swing');
+	    }
+	});
+
+// Close mobile menu on link click
+	$('.navbar-nav a').on('click', function(){
+		$('#navbar').collapse('hide');
+	});
+
 });
