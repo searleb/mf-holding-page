@@ -13,10 +13,14 @@ h1 {
   font-style: normal;
   font-size: 30px;
   letter-spacing: 3px;
+  text-transform: uppercase;
   margin: 0px; }
+  @media only screen and (min-width: 480px) {
+    h1 {
+      font-size: 45px; } }
   @media only screen and (min-width: 768px) {
     h1 {
-      font-size: 50px; } }
+      font-size: 55px; } }
   @media only screen and (min-width: 992px) {
     h1 {
       font-size: 65px;

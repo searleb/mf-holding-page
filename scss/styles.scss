@@ -44,10 +44,13 @@ h1{
 	font-style: $font-title-style;
 	font-size: 30px;
 	letter-spacing: 3px;
+	text-transform: uppercase;
 	margin: 0px;
-
+		@media #{$media-xs} {
+			font-size: 45px;
+		}
 		@media #{$media-sm} {
-			font-size: 50px;
+			font-size: 55px;
 		}
 		@media #{$media-md} {
 			font-size: 65px;

@@ -39,4 +39,29 @@ $(document).ready(function(){
 		$('#navbar').collapse('hide');
 	});
 
+// Rotating title text
+	var random1 = 2000;
+	var random2 = 2500;
+
+	function randomTime () {
+		random1 = Math.round( Math.random() * 10000 );
+		random2 = Math.round( Math.random() * 10000 )
+	}
+
+	$('#h1-first-line').dynamo({
+	    delay: random1,
+	    // speed: random1,
+	    lines: ['continually', 'Deliberately', 'Honestly', 'Totally'],
+	    callback: function() { 
+	    	randomTime();
+	    }
+	});
+	$('#h1-second-line').dynamo({
+	    delay: random2,
+	    // speed: random2,
+	    lines: ['evolving', 'planning', 'designing'],
+	    callback: function() { 
+	    	randomTime();
+	    }
+	});
 });
