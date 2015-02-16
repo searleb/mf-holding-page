@@ -134,19 +134,20 @@ nav {
 	background-color: $color-background;
 	position: fixed;
 	top: 0;
-
+	ul:first-child li a:first-child{
+		// @media #{$media-md} {
+			padding-left: 0px !important;
+		// }
+	}
 	li>a{
 		font-family: $font-details;
 		font-weight: $font-details-weight;
 		font-style: $font-details-style;
+		text-decoration: none;
 		font-size: 14px;
 		color: $color-mf-green;
 		letter-spacing: 1.14px;
 		text-align: center;
-		@media #{$media-md} {
-			padding-left: 0px !important;
-			padding-right: 30px !important;
-		}
 		&:hover{
 			background-color: transparent !important;
 			color: $color-mf-navy;
@@ -301,6 +302,10 @@ section{
 
 // FOOTER
 
+#contact{
+	padding: 0px;
+}
+
 footer{
 	.contact-section{
 		padding: 70px 25px;
@@ -327,7 +332,7 @@ footer{
 			}
 		}
 		@media #{$media-sm} {
-			text-align: right;
+			// float: right;
 		}
 	}
 
@@ -341,6 +346,19 @@ footer{
 	}
 }	
 
+// SODA
+#soda{
+	img, p{
+		display: inline-block;
+		padding: 0px 20px 0 20px;
+	}
+}
+
+// THATS IT
+#thats-it{
+	background-color: #fff;
+	text-align: center;
+}
 
 
 

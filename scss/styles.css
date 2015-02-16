@@ -97,18 +97,17 @@ nav {
   background-color: #F4F3EE;
   position: fixed;
   top: 0; }
+  nav ul:first-child li a:first-child {
+    padding-left: 0px !important; }
   nav li > a {
     font-family: "Maison Neue Mono", Calibri, Arial, Roboto, sans-serif;
     font-weight: 300;
     font-style: normal;
+    text-decoration: none;
     font-size: 14px;
     color: #B1C841;
     letter-spacing: 1.14px;
     text-align: center; }
-    @media only screen and (min-width: 992px) {
-      nav li > a {
-        padding-left: 0px !important;
-        padding-right: 30px !important; } }
     nav li > a:hover {
       background-color: transparent !important;
       color: #122434; }
@@ -215,6 +214,9 @@ section {
 .article-divider {
   border-top: 1px solid #eee; }
 
+#contact {
+  padding: 0px; }
+
 footer .contact-section {
   padding: 70px 25px; }
   footer .contact-section h2 {
@@ -230,10 +232,15 @@ footer #contact-syd {
     color: #fff; }
   footer #contact-syd .details a:hover {
     color: #B1C841; }
-  @media only screen and (min-width: 768px) {
-    footer #contact-syd {
-      text-align: right; } }
 footer #contact-ldn {
   background-color: #B1C841; }
   footer #contact-ldn .details a:hover {
     color: #fff; }
+
+#soda img, #soda p {
+  display: inline-block;
+  padding: 0px 20px 0 20px; }
+
+#thats-it {
+  background-color: #fff;
+  text-align: center; }
