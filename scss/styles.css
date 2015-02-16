@@ -199,24 +199,41 @@ section {
 
 .work-article {
   height: 250px;
-  padding-top: 40px; }
+  padding-top: 60px; }
   .work-article img {
     margin-top: 10px;
     margin-bottom: 25px; }
+  @media only screen and (min-width: 768px) {
+    .work-article {
+      padding-top: 100px; } }
 
 #work {
   background-color: #FFF; }
+  #work .details-container {
+    margin-bottom: 50px; }
 
 .article-divider {
-  border-top: 1px solid grey; }
+  border-top: 1px solid #eee; }
 
-footer .contact {
-  padding: 25px; }
+footer .contact-section {
+  padding: 70px 25px; }
+  footer .contact-section h2 {
+    letter-spacing: 3px; }
+  footer .contact-section address {
+    margin: 30px 0 30px 0; }
+  footer .contact-section .space {
+    margin-bottom: 20px; }
 footer #contact-syd {
   background-color: #122434;
   color: #fff !important; }
+  footer #contact-syd .details, footer #contact-syd .details a {
+    color: #fff; }
+  footer #contact-syd .details a:hover {
+    color: #B1C841; }
+  @media only screen and (min-width: 768px) {
+    footer #contact-syd {
+      text-align: right; } }
 footer #contact-ldn {
   background-color: #B1C841; }
-
-.container-fluid {
-  padding: 0px; }
+  footer #contact-ldn .details a:hover {
+    color: #fff; }

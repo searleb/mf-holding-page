@@ -277,40 +277,70 @@ section{
 
 .work-article{
 	height: 250px;
-	padding-top: 40px;
+	padding-top: 60px;
 	img{
 		margin-top: 10px;
 		margin-bottom: 25px;
+	}
+	@media #{$media-sm} {
+		padding-top: 100px;
 	}
 }
 
 #work{
 	background-color: #FFF;
+	
+	.details-container{
+		margin-bottom: 50px;
+	}
 }
 
 .article-divider{
-	border-top: 1px solid grey;
+	border-top: 1px solid #eee;
 }
 
 // FOOTER
 
 footer{
-	.contact{
-		padding: 25px;
+	.contact-section{
+		padding: 70px 25px;
+		h2{
+			letter-spacing: 3px;
+		}
+		address{
+			margin: 30px 0 30px 0;
+		}
+		.space{
+			margin-bottom: 20px;
+		}
 	}
 
 	#contact-syd{
 		background-color: $color-mf-navy;
 		color: #fff !important;
+		.details, .details a{
+			color: #fff;
+		}
+		.details a{
+			&:hover{
+				color: $color-mf-green;
+			}
+		}
+		@media #{$media-sm} {
+			text-align: right;
+		}
 	}
 
 	#contact-ldn{
 		background-color: $color-mf-green;
-	}	
-}
-.container-fluid{
-	padding: 0px;
-}
+		.details a{
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+}	
+
 
 
 
