@@ -184,9 +184,7 @@ section {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%); }
   @media only screen and (min-width: 992px) {
     #landing-page .title-subheading {
       margin-top: 60px;
@@ -197,12 +195,12 @@ section {
     position: absolute;
     bottom: 20px;
     left: 50%;
-    -webkit-transform: translate(-50%, 0);
-        -ms-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
     cursor: pointer;
     position: absolute;
     -webkit-animation: pulse 2s infinite ease-in-out;
+    -moz-animation: pulse 2s infinite ease-in-out;
+    -o-animation: pulse 2s infinite ease-in-out;
     animation: pulse 2s infinite ease-in-out; }
 @-webkit-keyframes pulse {
   0% {

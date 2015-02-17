@@ -12,6 +12,7 @@ $(document).ready(function(){
 
 	$(window).resize(function() {
 		setLandingPageSize();
+		console.log('resize');
 	}); 
 
 	setLandingPageSize();
@@ -51,7 +52,7 @@ $(document).ready(function(){
 	$('#h1-first-line').dynamo({
 	    delay: random1,
 	    // speed: random1,
-	    lines: ['continually', 'Deliberately', 'Honestly', 'Totally'],
+	    lines: ['hopelessly', 'deliberately', 'scarily', 'proudly', 'rapidly', 'unashamedly', 'emotionally', 'elegantly'],
 	    callback: function() { 
 	    	randomTime();
 	    }
@@ -59,7 +60,7 @@ $(document).ready(function(){
 	$('#h1-second-line').dynamo({
 	    delay: random2,
 	    // speed: random2,
-	    lines: ['evolving', 'planning', 'designing'],
+	    lines: ['devoted', 'quick', 'efficient', 'independent', 'small', 'clear', 'available', 'wasted'],
 	    callback: function() { 
 	    	randomTime();
 	    }
