@@ -186,9 +186,27 @@ section {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
+  #landing-page .title-subheading {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0px);
+    -moz-transform: translate(-50%, 0px);
+    -ms-transform: translate(-50%, 0px);
+    -o-transform: translate(-50%, 0px);
+    transform: translate(-50%, 0px);
+    min-width: 245px; }
+    @media only screen and (min-width: 768px) {
+      #landing-page .title-subheading {
+        min-width: 421px; } }
+    @media only screen and (min-width: 992px) {
+      #landing-page .title-subheading {
+        width: 450px; } }
+    @media only screen and (min-width: 1200px) {
+      #landing-page .title-subheading {
+        width: 550px; } }
   @media only screen and (min-width: 992px) {
     #landing-page .title-subheading {
       margin-top: 60px;
