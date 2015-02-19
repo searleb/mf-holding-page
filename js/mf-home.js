@@ -1,6 +1,22 @@
+var width = $(window).width();
+var height = $(window).height();
+$('#loader').css({
+	'min-height': height,
+	'min-width': width
+});
+
+$(window).load(function(){
+	$('#loader').delay(2500).animate({
+		opacity:0
+	}, function () {
+		$(this).remove();	
+		$('nav').animate({
+			opacity:1
+		});
+	})
+});
+
 $(document).ready(function(){
-		var width = $(window).width();
-		var height = $(window).height();
 
 // Fit landing page to screen
 	function setLandingPageSize() {

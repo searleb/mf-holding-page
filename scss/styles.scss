@@ -128,7 +128,7 @@ p{
 	color: $color-mf-green
 }
 nav {
-	// margin-top: 20px;
+	opacity: 0;
 	background-color: $color-background;
 	position: fixed;
 	top: 0;
@@ -242,9 +242,28 @@ section{
 		left: 50%;
 		-webkit-transform: translate(-50%, -50%);
 		-moz-transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, 0%);
+		-ms-transform: translate(-50%, -50%);
 		-o-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
+	}
+	.title-subheading{
+		position: absolute;
+		left: 50%;
+		-webkit-transform: translate(-50%, 0px);
+		-moz-transform: translate(-50%, 0px);
+		-ms-transform: translate(-50%, 0px);
+		-o-transform: translate(-50%, 0px);
+		transform: translate(-50%, 0px);
+		min-width: 245px;
+		@media #{$media-sm} {
+			min-width: 421px
+		}
+		@media #{$media-md} {
+			width: 450px
+		}
+		@media #{$media-lg} {
+			width: 550px
+		}
 	}
 
 	@media #{$media-md} {
@@ -395,6 +414,35 @@ footer{
 	text-align: center;
 }
 
+// LOADER
+#loader{
+	background-color: $color-mf-navy;
+	z-index: 1;
+	position: fixed;
+}
+
+svg{
+	// display: none;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin:auto auto;
+}
+.path{
+	fill:none;
+	stroke:#B1C940;
+	stroke-width:1.5;
+	stroke-dasharray:1000;
+	stroke-dashoffset:1000;
+	animation:dash 3.5s linear forwards;
+}
+@keyframes dash{
+	to{
+		stroke-dashoffset:0;
+	}
+}
 
 
 
