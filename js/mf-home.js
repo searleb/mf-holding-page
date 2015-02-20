@@ -57,11 +57,12 @@ $(document).ready(function(){
 	});
 
 // Rotating title text
-	var delay = 3000;
+	var delay = 3000,
+		speed = 700;
 
 	$('#h1-first-line').dynamo({
 	    delay: delay,
-	    // speed: random1,
+	    speed: speed,
 	    lines: ['hopelessly', 'deliberately', 'scarily', 'proudly', 'rapidly', 'unashamedly', 'emotionally', 'elegantly', 'abundantly'],
 	    callback: function() { 
 	    	
@@ -69,7 +70,7 @@ $(document).ready(function(){
 	});
 	$('#h1-second-line').dynamo({
 	    delay: delay,
-	    // speed: random2,
+	    speed: speed,
 	    lines: ['devoted', 'quick', 'efficient', 'independent', 'evolving', 'small', 'available', 'wasted', 'clear'],
 	    callback: function() { 
 	    	
