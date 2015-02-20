@@ -169,11 +169,11 @@ nav {
 		padding: 9px 16px !important;
 	}
 	#navbar{
-		background-color: #fff;
-		padding-top: 20px;
-		padding-bottom: 20px;		
+		background-color: #fff;		
 		@media #{$media-sm} {
 				background-color: $color-background;
+				padding-top: 20px;
+				padding-bottom: 20px;
 		}
 	}
 }
@@ -340,14 +340,17 @@ section{
 //  WORK SECTION
 
 .work-article{
-	height: 250px;
-	padding-top: 60px;
+	height: 330px;
+	padding-top: 50px;
 	img{
 		margin-top: 10px;
 		margin-bottom: 25px;
 	}
+	@media #{$media-xs} {
+		height: 250px;
+	}
 	@media #{$media-sm} {
-		padding-top: 100px;
+		padding-top: 80px;
 	}
 }
 
@@ -439,7 +442,7 @@ svg{
 }
 .path{
 	fill:none;
-	stroke:#B1C940;
+	stroke:$color-mf-green;
 	stroke-width:1.5;
 	stroke-dasharray:1000;
 	stroke-dashoffset:1000;

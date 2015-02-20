@@ -128,12 +128,12 @@ nav {
     line-height: 14px;
     padding: 9px 16px !important; }
   nav #navbar {
-    background-color: #fff;
-    padding-top: 20px;
-    padding-bottom: 20px; }
+    background-color: #fff; }
     @media only screen and (min-width: 768px) {
       nav #navbar {
-        background-color: #F4F3EE; } }
+        background-color: #F4F3EE;
+        padding-top: 20px;
+        padding-bottom: 20px; } }
 
 button {
   font-family: "Maison Neue Mono", Calibri, Arial, Roboto, sans-serif;
@@ -255,14 +255,17 @@ section {
       font-size: 25px; } }
 
 .work-article {
-  height: 250px;
-  padding-top: 60px; }
+  height: 330px;
+  padding-top: 50px; }
   .work-article img {
     margin-top: 10px;
     margin-bottom: 25px; }
+  @media only screen and (min-width: 480px) {
+    .work-article {
+      height: 250px; } }
   @media only screen and (min-width: 768px) {
     .work-article {
-      padding-top: 100px; } }
+      padding-top: 80px; } }
 
 #work {
   background-color: #FFF; }
@@ -320,7 +323,7 @@ svg {
 
 .path {
   fill: none;
-  stroke: #B1C940;
+  stroke: #B1C841;
   stroke-width: 1.5;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
