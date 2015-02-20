@@ -6,7 +6,7 @@ $('#loader').css({
 });
 
 $(window).load(function(){
-	$('#loader').delay(2000).animate({
+	$('#loader').delay(2500).animate({
 		opacity:0
 	}, function () {
 		$(this).remove();	
@@ -57,12 +57,6 @@ $(document).ready(function(){
 	});
 
 // Rotating title text
-	// var randomTime = randomTime();
-
-	// function randomTime () {
-	// 	return Math.round( Math.random() * 90000 );
-	// }
-
 	var delay = 3000;
 
 	$('#h1-first-line').dynamo({
