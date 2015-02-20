@@ -6,7 +6,7 @@ $('#loader').css({
 });
 
 $(window).load(function(){
-	$('#loader').delay(2500).animate({
+	$('#loader').delay(2000).animate({
 		opacity:0
 	}, function () {
 		$(this).remove();	
@@ -57,28 +57,28 @@ $(document).ready(function(){
 	});
 
 // Rotating title text
-	var random1 = 2000;
-	var random2 = 2500;
+	// var randomTime = randomTime();
 
-	function randomTime () {
-		random1 = Math.round( Math.random() * 10000 );
-		random2 = Math.round( Math.random() * 10000 )
-	}
+	// function randomTime () {
+	// 	return Math.round( Math.random() * 90000 );
+	// }
+
+	var delay = 3000;
 
 	$('#h1-first-line').dynamo({
-	    delay: random1,
+	    delay: delay,
 	    // speed: random1,
-	    lines: ['hopelessly', 'deliberately', 'scarily', 'proudly', 'rapidly', 'unashamedly', 'emotionally', 'elegantly'],
+	    lines: ['hopelessly', 'deliberately', 'scarily', 'proudly', 'rapidly', 'unashamedly', 'emotionally', 'elegantly', 'abundantly'],
 	    callback: function() { 
-	    	randomTime();
+	    	
 	    }
 	});
 	$('#h1-second-line').dynamo({
-	    delay: random2,
+	    delay: delay,
 	    // speed: random2,
-	    lines: ['devoted', 'quick', 'efficient', 'independent', 'small', 'clear', 'available', 'wasted'],
+	    lines: ['devoted', 'quick', 'efficient', 'independent', 'evolving', 'small', 'available', 'wasted', 'clear'],
 	    callback: function() { 
-	    	randomTime();
+	    	
 	    }
 	});
 });
