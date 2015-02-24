@@ -22,7 +22,7 @@
 		<![endif]-->
 	</head>
 	<body>
-		<div id="loader">
+<!-- 		<div id="loader">
 			<svg width="180px" height="208px" viewBox="0 0 180 208">
 			    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 			        <g transform="translate(-17.000000, -3.000000)" fill="#B1C940">
@@ -30,8 +30,7 @@
 			        </g>
 			    </g>
 			</svg>
-		</div>
-		
+		</div> -->
 		<div class="container">
 			<div class="row">
 				<nav class="navbar navbar-fixed-top">
@@ -56,30 +55,36 @@
 			      </div>
 			    </nav>
 			</div>
+		</div>
 			
-			<img id="fixed-logo" src="img/mf-logo.png" alt="mf-logo">
+			<!-- <img id="fixed-logo" src="img/mf-logo.png" alt="mf-logo"> -->
 
 				<!-- landing page -->
 				<section id="landing-page">				
-					<div class="row">
-						<div class="col-xs-12">
-							<div class="title-subheading">
-								<h2>A digital product studio –</h2>
-								<h2>We help companies design and grow profitable digital businesses.</h2>
-							</div>
+						<!-- <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-2"> -->
+					<div id="video-container">
+						<video autoplay loop class="fillWidth">
+						<source src="video/homePage.mp4" type="video/mp4"/>
+							<source src="video/homePage.webm" type="video/webm"/>
+
+							Please update your browser to view our site as we'd like you to see it :)
+						</video>
+						<div class="title-subheading mf-white">
+							<h2>A digital product studio –</h2>
+							<h2>We help companies design and grow profitable digital businesses.</h2>
+						</div>
+						<div id="title-text">
+							<h1 class="mf-white">
+								<span id="h1-first-line">CONTINUALLY</span><br/>
+								<span id="h1-second-line">EVOLVING</span>
+							</h1>
+							<h1 class="mf-green">
+								MENTALLY <br />
+								FRIENDLY.
+							</h1>
 						</div>
 					</div>
-						<!-- <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-2"> -->
-							<div id="title-text">
-								<h1 class="mf-green">
-									<span id="h1-first-line">CONTINUALLY</span><br/>
-									<span id="h1-second-line">EVOLVING</span>
-								</h1>
-								<h1 class="mf-navy">
-									MENTALLY <br />
-									FRIENDLY.
-								</h1>
-							</div>
+
 						<!-- </div> -->
 					<div class="chevron">
 						<a href="#about" class="scroll">
@@ -90,27 +95,28 @@
 
 			<!-- About -->
 			<section id="about">
-				<div class="row">
-					<div class="col-xs-11 col-sm-10 col-sm-offset-2 section-title">
-						<h2>We focus on six key areas of digital product development:</h2>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-11 col-sm-10 col-sm-offset-2 section-title">
+							<h2>We focus on six key areas of digital product development:</h2>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-2">
-						<article class="col-sm-4">
-							<h2>Planning</h2>
-							<p class="mf-green">Research, Feature planning, Insights.</p>
-						</article>
-						<article class="col-sm-4">
-							<h2>Development</h2>
-							<p class="mf-green">Prototypes and finished products for mobile and web.</p>
-						</article>
-						<article class="col-sm-4">
-							<h2>Content</h2>
-							<p class="mf-green">Beautiful, engaging content</p>
-						</article>
+					<div class="row">
+						<div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-2">
+							<article class="col-sm-4">
+								<h2>Planning</h2>
+								<p class="mf-green">Research, Feature planning, Insights.</p>
+							</article>
+							<article class="col-sm-4">
+								<h2>Development</h2>
+								<p class="mf-green">Prototypes and finished products for mobile and web.</p>
+							</article>
+							<article class="col-sm-4">
+								<h2>Content</h2>
+								<p class="mf-green">Beautiful, engaging content</p>
+							</article>
+						</div>
 					</div>
-				</div>
 					<div class="row">
 						<div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-2">
 							<article class="col-sm-4">
@@ -127,24 +133,28 @@
 							</article>
 						</div>
 					</div>
+				</div>
 			</section>
 			
 			<section>
-				<div class="row">
-					<div class="col-xs-11 col-sm-10 col-sm-offset-2 section-title">
-						<h2>Articles about our team and process:</h2>
+				<div class="container">
+					
+					<div class="row">
+						<div class="col-xs-11 col-sm-10 col-sm-offset-2 section-title">
+							<h2>Articles about our team and process:</h2>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-2">
-						<ul id="articles-list">
-							<li><a href="">Product growth tools we use</a></li>
-							<li><a href="">Working with your agency as a team</a></li>
-							<li><a href="">Seventeen things you should be doing</a></li>
-						</ul>
-						<div class="details-container">
-							<p class="details-small">Our Writing <a href="https://medium.com/@MentallyFriendly" target="_blank">Medium</a></p>
-							<p class="details-small">Our Studio <a href="https://www.facebook.com/MentallyFriendly" target="_blank">Facebook</a> &amp; <a href="https://instagram.com/mentallyfriendly/" target="_blank">Instagram</a></p>
+					<div class="row">
+						<div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-2">
+							<ul id="articles-list">
+								<li><a href="">Product growth tools we use</a></li>
+								<li><a href="">Working with your agency as a team</a></li>
+								<li><a href="">Seventeen things you should be doing</a></li>
+							</ul>
+							<div class="details-container">
+								<p class="details-small">Our Writing <a href="https://medium.com/@MentallyFriendly" target="_blank">Medium</a></p>
+								<p class="details-small">Our Studio <a href="https://www.facebook.com/MentallyFriendly" target="_blank">Facebook</a> &amp; <a href="https://instagram.com/mentallyfriendly/" target="_blank">Instagram</a></p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -153,12 +163,14 @@
 
 		<!-- Work -->
 		<section id="work">
-			<div class="container">
+			<div class="container">				
 				<div class="row">					
 					<div class="col-xs-11 col-sm-10 col-sm-offset-2 section-title">
 						<h2>Recently delivered work -</h2>
 					</div>
 				</div>
+			</div>
+			<div class="container">	
 				<div class="row">
 					<div class="col-xs-12 col-sm-10 col-sm-offset-2">
 						<!-- fitness first -->
@@ -295,7 +307,7 @@
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-		<script src="js/dynamo.js"></script>
+		<script src="js/appear.js"></script>
 		<script src="js/mf-home.js"></script>
 	</body>
 </html>

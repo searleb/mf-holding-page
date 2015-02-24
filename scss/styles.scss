@@ -20,6 +20,8 @@ $color-mf-green: #B1C841;
 $color-mf-navy: #122434;
 $color-body: #333333;
 $color-background: #F4F3EE;
+$color-navbar-mobile: transparent;
+$color-title: #FFF;
 
 // Typography
 $font-title: "Maison Neue Bold", Calibri, Arial, Roboto, sans-serif;
@@ -48,14 +50,14 @@ h1{
 	text-transform: uppercase;
 	margin: 0px;
 		@media #{$media-xs} {
-			font-size: 45px;
+			font-size: 40px;
 		}
 		@media #{$media-sm} {
-			font-size: 55px;
+			font-size: 50px;
 		}
 		@media #{$media-md} {
-			font-size: 65px;
-			line-height: 54px;
+			font-size: 60px;
+			line-height: 50px;
 		}
 }
 h2{
@@ -128,9 +130,29 @@ p{
 .mf-green{
 	color: $color-mf-green
 }
+.mf-white{
+	color: $color-title
+}
 nav {
-	opacity: 0;
-	background-color: $color-background;
+	
+	&.off-video-nav{
+		background-color: $color-background;
+		
+		li>a{	
+			color: $color-mf-green;
+			&:hover{
+				color: $color-mf-navy;
+			}
+		}
+
+		.button{
+			color: $color-mf-green;
+			border: 2px solid $color-mf-green;
+		}
+	}
+
+	// opacity: 0;
+	background-color: $color-navbar-mobile;
 	position: fixed;
 	top: 0;
 
@@ -145,7 +167,10 @@ nav {
 		text-align: center;
 		&:hover{
 			background-color: transparent !important;
-			color: $color-mf-navy;
+			color: $color-mf-green;
+		}
+		@media #{$media-sm} {
+			color: $color-title;
 		}
 	}
 	.navbar-toggle{
@@ -159,9 +184,9 @@ nav {
 		font-family: $font-details;
 		font-weight: $font-details-weight;
 		font-style: $font-details-style;
-		color: $color-mf-green;
+		color: $color-title;
 		text-transform: uppercase;
-		border: 2px solid $color-mf-green;
+		// border: 2px solid $color-mf-green;
 		background: transparent;
 		font-size: 14px;
 		letter-spacing: 1.14px;
@@ -171,9 +196,12 @@ nav {
 	#navbar{
 		background-color: #fff;		
 		@media #{$media-sm} {
-				background-color: $color-background;
+				background-color: $color-navbar-mobile;
 				padding-top: 20px;
 				padding-bottom: 20px;
+		}
+		&.navbar-collapse {
+			max-height: 1000px !important;
 		}
 	}
 }
@@ -216,9 +244,11 @@ a{
 	}
 }
 
-
 section{
 	padding: 50px 0px;
+	&#landing-page{
+		padding-top: 0px;
+	}
 }
 
 
@@ -235,52 +265,58 @@ section{
 }
 
 #landing-page{
-	padding-top: 100px;
-	
-	#title-text{
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		-webkit-transform: translate(-50%, -50%);
-		-moz-transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
-		-o-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
+	// padding-top: 100px;
+
+	#video-container {
+		top:0%;
+		left:0%;
+		height:100%;
+		width:100%;
+		overflow: hidden;
+		position: relative;
 	}
-	.title-subheading{
-		position: absolute;
-		left: 50%;
-		-webkit-transform: translate(-50%, 0px);
-		-moz-transform: translate(-50%, 0px);
-		-ms-transform: translate(-50%, 0px);
-		-o-transform: translate(-50%, 0px);
-		transform: translate(-50%, 0px);
-		min-width: 245px;
-		@media #{$media-xs} {
-			width: 351px
-		}
+	video {
+		position:relative;
+		z-index:0;
+		display: none;
 		@media #{$media-sm} {
-			width: 422px
+			display: block;
 		}
-		@media #{$media-md} {
-			width: 492px
-		}
-		@media #{$media-lg} {
-			width: 492px
-		}
+	}
+	video.fillWidth {
+		width: 100%;
 	}
 
-	@media #{$media-md} {
-		.title-subheading{
-			margin-top: 60px;
+	#title-text{
+		position:absolute;
+	    top:40%;
+	    left: 5%;	
+	}
+	.title-subheading{
+		position:absolute;
+	    top:25%;
+	    left: 5%;
+	    color: $color-title;
+	    display: none;
+
+	 //    @media #{$media-xs} {
+		// 	width: 351px
+		// }
+		@media #{$media-sm} {
+			display: block;
+		}
+		@media #{$media-md} {
 			font-size: 20px;
 		}
+		// @media #{$media-lg} {
+		// 	width: 492px
+		// }
 	}
 	.chevron{
 		width: 34px;
-		margin: 35px auto 0px auto;
-		position: absolute;
-		bottom: 20px;
+		margin: 0px auto;
+		// position: absolute;
+		// bottom: 20px;
 		left: 50%;
 		-webkit-transform: translate(-50%, 0%);
 		-moz-transform: translate(-50%, 0%);
