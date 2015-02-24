@@ -100,13 +100,13 @@ nav {
   background-color: transparent;
   position: fixed;
   top: 0; }
-  nav.desktop-nav {
+  nav.off-video-nav {
     background-color: #F4F3EE; }
-    nav.desktop-nav li > a {
+    nav.off-video-nav li > a {
       color: #B1C841; }
-      nav.desktop-nav li > a:hover {
+      nav.off-video-nav li > a:hover {
         color: #122434; }
-    nav.desktop-nav .button {
+    nav.off-video-nav .button {
       color: #B1C841;
       border: 2px solid #B1C841; }
   nav li > a {
@@ -115,12 +115,15 @@ nav {
     font-style: normal;
     text-decoration: none;
     font-size: 14px;
-    color: #FFF;
+    color: #B1C841;
     letter-spacing: 1.14px;
     text-align: center; }
     nav li > a:hover {
       background-color: transparent !important;
       color: #B1C841; }
+    @media only screen and (min-width: 768px) {
+      nav li > a {
+        color: #FFF; } }
   nav .navbar-toggle {
     width: 100%;
     text-align: center;
@@ -144,6 +147,8 @@ nav {
         background-color: transparent;
         padding-top: 20px;
         padding-bottom: 20px; } }
+    nav #navbar.navbar-collapse {
+      max-height: 1000px !important; }
 
 button {
   font-family: "Maison Neue Mono", Calibri, Arial, Roboto, sans-serif;
@@ -179,11 +184,10 @@ a {
     background-color: #F4F3EE !important;
     outline: none; }
 
-section:first-of-type {
-  padding-top: 0px; }
-
 section {
   padding: 50px 0px; }
+  section#landing-page {
+    padding-top: 0px; }
 
 #fixed-logo {
   position: absolute;
@@ -202,7 +206,11 @@ section {
   position: relative; }
 #landing-page video {
   position: relative;
-  z-index: 0; }
+  z-index: 0;
+  display: none; }
+  @media only screen and (min-width: 768px) {
+    #landing-page video {
+      display: block; } }
 #landing-page video.fillWidth {
   width: 100%; }
 #landing-page #title-text {
@@ -223,9 +231,7 @@ section {
       font-size: 20px; } }
 #landing-page .chevron {
   width: 34px;
-  margin: 35px auto 0px auto;
-  position: absolute;
-  bottom: 20px;
+  margin: 0px auto;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
   -ms-transform: translate(-50%, 0%);

@@ -134,12 +134,8 @@ p{
 	color: $color-title
 }
 nav {
-	// opacity: 0;
-	background-color: $color-navbar-mobile;
-	position: fixed;
-	top: 0;
 	
-	&.desktop-nav{
+	&.off-video-nav{
 		background-color: $color-background;
 		
 		li>a{	
@@ -155,18 +151,26 @@ nav {
 		}
 	}
 
+	// opacity: 0;
+	background-color: $color-navbar-mobile;
+	position: fixed;
+	top: 0;
+
 	li>a{
 		font-family: $font-details;
 		font-weight: $font-details-weight;
 		font-style: $font-details-style;
 		text-decoration: none;
 		font-size: 14px;
-		color: $color-title;
+		color: $color-mf-green;
 		letter-spacing: 1.14px;
 		text-align: center;
 		&:hover{
 			background-color: transparent !important;
 			color: $color-mf-green;
+		}
+		@media #{$media-sm} {
+			color: $color-title;
 		}
 	}
 	.navbar-toggle{
@@ -195,6 +199,9 @@ nav {
 				background-color: $color-navbar-mobile;
 				padding-top: 20px;
 				padding-bottom: 20px;
+		}
+		&.navbar-collapse {
+			max-height: 1000px !important;
 		}
 	}
 }
@@ -237,11 +244,11 @@ a{
 	}
 }
 
-section:first-of-type{
-	padding-top: 0px;
-}
 section{
 	padding: 50px 0px;
+	&#landing-page{
+		padding-top: 0px;
+	}
 }
 
 
@@ -271,6 +278,10 @@ section{
 	video {
 		position:relative;
 		z-index:0;
+		display: none;
+		@media #{$media-sm} {
+			display: block;
+		}
 	}
 	video.fillWidth {
 		width: 100%;
@@ -303,9 +314,9 @@ section{
 	}
 	.chevron{
 		width: 34px;
-		margin: 35px auto 0px auto;
-		position: absolute;
-		bottom: 20px;
+		margin: 0px auto;
+		// position: absolute;
+		// bottom: 20px;
 		left: 50%;
 		-webkit-transform: translate(-50%, 0%);
 		-moz-transform: translate(-50%, 0%);

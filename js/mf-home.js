@@ -1,5 +1,5 @@
-// var width = $(window).width();
-// var height = $(window).height();
+var width = $(window).width();
+var height = $(window).height();
 
 // Page loader
 	// $('#loader').css({
@@ -28,17 +28,21 @@ $(document).ready(function(){
 		video = $('#video-container').visible(true);
 
 		if (video === true){
-			console.log(video);
-			nav.removeClass('desktop-nav');
+			nav.removeClass('off-video-nav');
 			return;
 		} else if (video === false){
-			console.log(video);
-			nav.addClass('desktop-nav');
+			nav.addClass('off-video-nav');
 		} else{
-			console.log(vdeo);
 			return;
 		}
 
+	});
+
+	// Set mobile menu to fit window height
+
+	$('#navbar').height(height);
+	$('.navbar-collapse').css({
+		'max-height': height
 	});
 
 // Fit landing page to screen
