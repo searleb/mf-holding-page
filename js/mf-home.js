@@ -1,37 +1,60 @@
-var width = $(window).width();
-var height = $(window).height();
-$('#loader').css({
-	'min-height': height,
-	'min-width': width
-});
+// var width = $(window).width();
+// var height = $(window).height();
 
-$(window).load(function(){
-	$('#loader').delay(2500).animate({
-		opacity:0
-	}, function () {
-		$(this).remove();	
-		$('nav').animate({
-			opacity:1
-		});
-	})
-});
+// Page loader
+	// $('#loader').css({
+	// 	'min-height': height,
+	// 	'min-width': width
+	// });
+
+	// $(window).load(function(){
+	// 	$('#loader').delay(2500).animate({
+	// 		opacity:0
+	// 	}, function () {
+	// 		$(this).remove();	
+	// 		$('nav').animate({
+	// 			opacity:1
+	// 		});
+	// 	})
+	// });
 
 $(document).ready(function(){
 
+	// check if video is visible on screen
+	var video;
+	var nav = $('nav');
+	$(window).on('scroll', function(){
+
+		video = $('#video-container').visible(true);
+
+		if (video === true){
+			console.log(video);
+			nav.removeClass('desktop-nav');
+			return;
+		} else if (video === false){
+			console.log(video);
+			nav.addClass('desktop-nav');
+		} else{
+			console.log(vdeo);
+			return;
+		}
+
+	});
+
 // Fit landing page to screen
-	function setLandingPageSize() {
+	// function setLandingPageSize() {
 
-		$('#landing-page').css({
-			'min-height': height
-		});
-	}
+	// 	$('#landing-page').css({
+	// 		'min-height': height
+	// 	});
+	// }
 
-	$(window).resize(function() {
-		setLandingPageSize();
-		console.log('resize');
-	}); 
+	// $(window).resize(function() {
+	// 	setLandingPageSize();
+	// 	console.log('resize');
+	// }); 
 
-	setLandingPageSize();
+	// setLandingPageSize();
 
 // Smooth Scrolling
 	$(".scroll").click(function(event){
@@ -57,23 +80,23 @@ $(document).ready(function(){
 	});
 
 // Rotating title text
-	var delay = 3000,
-		speed = 700;
+	// var delay = 3000,
+	// 	speed = 700;
 
-	$('#h1-first-line').dynamo({
-	    delay: delay,
-	    speed: speed,
-	    lines: ['hopelessly', 'deliberately', 'scarily', 'proudly', 'rapidly', 'unashamedly', 'emotionally', 'elegantly', 'abundantly'],
-	    callback: function() { 
+	// $('#h1-first-line').dynamo({
+	//     delay: delay,
+	//     speed: speed,
+	//     lines: ['hopelessly', 'deliberately', 'scarily', 'proudly', 'rapidly', 'unashamedly', 'emotionally', 'elegantly', 'abundantly'],
+	//     callback: function() { 
 	    	
-	    }
-	});
-	$('#h1-second-line').dynamo({
-	    delay: delay,
-	    speed: speed,
-	    lines: ['devoted', 'quick', 'efficient', 'independent', 'evolving', 'small', 'available', 'wasted', 'clear'],
-	    callback: function() { 
+	//     }
+	// });
+	// $('#h1-second-line').dynamo({
+	//     delay: delay,
+	//     speed: speed,
+	//     lines: ['devoted', 'quick', 'efficient', 'independent', 'evolving', 'small', 'available', 'wasted', 'clear'],
+	//     callback: function() { 
 	    	
-	    }
-	});
+	//     }
+	// });
 });
