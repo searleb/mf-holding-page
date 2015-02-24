@@ -24,7 +24,7 @@ h1 {
   @media only screen and (min-width: 992px) {
     h1 {
       font-size: 65px;
-      line-height: 52px; } }
+      line-height: 54px; } }
 
 h2 {
   font-family: "Maison Neue Medium", Calibri, Arial, Roboto, sans-serif;
@@ -84,7 +84,8 @@ p {
   line-height: 17px; }
 
 .section-title {
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-left: 30px; }
 
 .mf-navy {
   color: #122434; }
@@ -125,14 +126,14 @@ nav {
     font-size: 14px;
     letter-spacing: 1.14px;
     line-height: 14px;
-    padding: 9px 16px; }
+    padding: 9px 16px !important; }
   nav #navbar {
-    background-color: #fff;
-    padding-top: 20px;
-    padding-bottom: 20px; }
+    background-color: #fff; }
     @media only screen and (min-width: 768px) {
       nav #navbar {
-        background-color: #F4F3EE; } }
+        background-color: #F4F3EE;
+        padding-top: 20px;
+        padding-bottom: 20px; } }
 
 button {
   font-family: "Maison Neue Mono", Calibri, Arial, Roboto, sans-serif;
@@ -186,24 +187,31 @@ section {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
   #landing-page .title-subheading {
     position: absolute;
     left: 50%;
     -webkit-transform: translate(-50%, 0px);
+    -moz-transform: translate(-50%, 0px);
     -ms-transform: translate(-50%, 0px);
+    -o-transform: translate(-50%, 0px);
     transform: translate(-50%, 0px);
     min-width: 245px; }
+    @media only screen and (min-width: 480px) {
+      #landing-page .title-subheading {
+        width: 351px; } }
     @media only screen and (min-width: 768px) {
       #landing-page .title-subheading {
-        min-width: 421px; } }
+        width: 422px; } }
     @media only screen and (min-width: 992px) {
       #landing-page .title-subheading {
-        width: 450px; } }
+        width: 492px; } }
     @media only screen and (min-width: 1200px) {
       #landing-page .title-subheading {
-        width: 550px; } }
+        width: 492px; } }
   @media only screen and (min-width: 992px) {
     #landing-page .title-subheading {
       margin-top: 60px;
@@ -215,11 +223,15 @@ section {
     bottom: 20px;
     left: 50%;
     -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
     -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
     transform: translate(-50%, 0);
     cursor: pointer;
     position: absolute;
     -webkit-animation: pulse 2s infinite ease-in-out;
+    -moz-animation: pulse 2s infinite ease-in-out;
+    -o-animation: pulse 2s infinite ease-in-out;
     animation: pulse 2s infinite ease-in-out; }
 @-webkit-keyframes pulse {
   0% {
@@ -238,18 +250,22 @@ section {
 
 #articles-list li {
   margin-bottom: 20px; }
-  #articles-list li a {
-    font-size: 14px; }
+  @media only screen and (min-width: 768px) {
+    #articles-list li a {
+      font-size: 25px; } }
 
 .work-article {
-  height: 250px;
-  padding-top: 60px; }
+  height: 330px;
+  padding-top: 50px; }
   .work-article img {
     margin-top: 10px;
     margin-bottom: 25px; }
+  @media only screen and (min-width: 480px) {
+    .work-article {
+      height: 250px; } }
   @media only screen and (min-width: 768px) {
     .work-article {
-      padding-top: 100px; } }
+      padding-top: 80px; } }
 
 #work {
   background-color: #FFF; }
@@ -281,9 +297,12 @@ footer #contact-ldn {
   footer #contact-ldn .details a:hover {
     color: #fff; }
 
-#soda img, #soda p {
-  display: inline-block;
-  padding: 0px 20px 0 20px; }
+#soda {
+  background: url("../img/soda.png") no-repeat 30px;
+  padding-left: 90px; }
+  #soda p {
+    display: inline;
+    padding: 0px 20px 0 0px; }
 
 #thats-it {
   background-color: #fff;
@@ -308,13 +327,18 @@ svg {
   stroke-width: 1.5;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  -webkit-animation: dash 3.5s linear forwards;
-          animation: dash 3.5s linear forwards; }
+  animation: draw 3.5s linear forwards;
+  -webkit-animation: draw 3.5s linear forwards;
+  -moz-animation: draw 3.5s linear forwards;
+  -ms-animation: draw 3.5s linear forwards;
+  -o-animation: draw 3.5s linear forwards;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s; }
 
-@-webkit-keyframes dash {
+@-webkit-keyframes draw {
   to {
     stroke-dashoffset: 0; } }
-
-@keyframes dash {
+@keyframes draw {
   to {
     stroke-dashoffset: 0; } }

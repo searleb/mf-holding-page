@@ -57,28 +57,23 @@ $(document).ready(function(){
 	});
 
 // Rotating title text
-	var random1 = 2000;
-	var random2 = 2500;
-
-	function randomTime () {
-		random1 = Math.round( Math.random() * 10000 );
-		random2 = Math.round( Math.random() * 10000 )
-	}
+	var delay = 3000,
+		speed = 700;
 
 	$('#h1-first-line').dynamo({
-	    delay: random1,
-	    // speed: random1,
-	    lines: ['hopelessly', 'deliberately', 'scarily', 'proudly', 'rapidly', 'unashamedly', 'emotionally', 'elegantly'],
+	    delay: delay,
+	    speed: speed,
+	    lines: ['hopelessly', 'deliberately', 'scarily', 'proudly', 'rapidly', 'unashamedly', 'emotionally', 'elegantly', 'abundantly'],
 	    callback: function() { 
-	    	randomTime();
+	    	
 	    }
 	});
 	$('#h1-second-line').dynamo({
-	    delay: random2,
-	    // speed: random2,
-	    lines: ['devoted', 'quick', 'efficient', 'independent', 'small', 'clear', 'available', 'wasted'],
+	    delay: delay,
+	    speed: speed,
+	    lines: ['devoted', 'quick', 'efficient', 'independent', 'evolving', 'small', 'available', 'wasted', 'clear'],
 	    callback: function() { 
-	    	randomTime();
+	    	
 	    }
 	});
 });

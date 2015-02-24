@@ -37,6 +37,7 @@ $font-details-style: normal;
 body, html{
 	background-color: $color-background;
 	color: $color-body;
+	// display: none;
 }
 h1{
 	font-family: $font-title;
@@ -54,7 +55,7 @@ h1{
 		}
 		@media #{$media-md} {
 			font-size: 65px;
-			line-height: 52px;
+			line-height: 54px;
 		}
 }
 h2{
@@ -118,8 +119,8 @@ p{
 	line-height: 17px;
 }
 .section-title{
-	// padding: 0px 0px 50px 0px;
 	padding-bottom: 50px;
+	padding-left: 30px;
 }
 .mf-navy{
 	color: $color-mf-navy;
@@ -165,14 +166,14 @@ nav {
 		font-size: 14px;
 		letter-spacing: 1.14px;
 		line-height: 14px;
-		padding: 9px 16px;
+		padding: 9px 16px !important;
 	}
 	#navbar{
-		background-color: #fff;
-		padding-top: 20px;
-		padding-bottom: 20px;		
+		background-color: #fff;		
 		@media #{$media-sm} {
 				background-color: $color-background;
+				padding-top: 20px;
+				padding-bottom: 20px;
 		}
 	}
 }
@@ -255,14 +256,17 @@ section{
 		-o-transform: translate(-50%, 0px);
 		transform: translate(-50%, 0px);
 		min-width: 245px;
+		@media #{$media-xs} {
+			width: 351px
+		}
 		@media #{$media-sm} {
-			min-width: 421px
+			width: 422px
 		}
 		@media #{$media-md} {
-			width: 450px
+			width: 492px
 		}
 		@media #{$media-lg} {
-			width: 550px
+			width: 492px
 		}
 	}
 
@@ -324,7 +328,9 @@ section{
 	li{
 		margin-bottom: 20px;
 		a{
-			font-size: 14px;
+		@media #{$media-sm} {
+			font-size: 25px;
+			}
 		}
 	}
 }
@@ -334,14 +340,17 @@ section{
 //  WORK SECTION
 
 .work-article{
-	height: 250px;
-	padding-top: 60px;
+	height: 330px;
+	padding-top: 50px;
 	img{
 		margin-top: 10px;
 		margin-bottom: 25px;
 	}
+	@media #{$media-xs} {
+		height: 250px;
+	}
 	@media #{$media-sm} {
-		padding-top: 100px;
+		padding-top: 80px;
 	}
 }
 
@@ -402,9 +411,11 @@ footer{
 
 // SODA
 #soda{
-	img, p{
-		display: inline-block;
-		padding: 0px 20px 0 20px;
+	background: url('../img/soda.png') no-repeat 30px;
+	padding-left: 90px;
+	p{
+		display: inline;
+		padding: 0px 20px 0 0px;
 	}
 }
 
@@ -422,7 +433,6 @@ footer{
 }
 
 svg{
-	// display: none;
 	position:absolute;
 	top:0;
 	left:0;
@@ -436,9 +446,21 @@ svg{
 	stroke-width:1.5;
 	stroke-dasharray:1000;
 	stroke-dashoffset:1000;
-	animation:dash 3.5s linear forwards;
+	animation:draw 3.5s linear forwards;
+	-webkit-animation:draw 3.5s linear forwards;
+	-moz-animation:draw 3.5s linear forwards;
+	-ms-animation:draw 3.5s linear forwards;
+	-o-animation:draw 3.5s linear forwards;
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
 }
-@keyframes dash{
+@-webkit-keyframes draw{
+	to{
+		stroke-dashoffset:0;
+	}
+}
+@keyframes draw{
 	to{
 		stroke-dashoffset:0;
 	}
